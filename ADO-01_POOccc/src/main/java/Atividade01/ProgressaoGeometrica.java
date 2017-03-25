@@ -5,35 +5,30 @@
  */
 package Atividade01;
 
+import Atividade02.SequenciaNumerica;
+
 
 /**
  *
  * @author jonata
  */
-public class ProgressaoGeometrica {
+public class ProgressaoGeometrica extends SequenciaNumerica {
     
-    private int valorInicial;
     private int razao;
 
-    public ProgressaoGeometrica(int valorInicial, int razao) {
-        this.valorInicial = valorInicial;
+    public ProgressaoGeometrica(int valorAtual, int razao) {
+        super(valorAtual);
         this.razao = razao;
     }
-    
+
     public void proximoValor() {
-        valorInicial = valorInicial * razao;
+        this.valorAtual = this.valorAtual * razao;
     }
-    
-    public int valorAtual() {
         
-        return valorInicial;
-    }
-    
-    
     public static void main(String[] args) {
-        int quantidade = 5;
-        int valorInicial = 1;
-        int razao = 3;
+        int quantidade = Integer.parseInt("5");
+        int valorInicial = Integer.parseInt("1");
+        int razao = Integer.parseInt("3");
         
         ProgressaoGeometrica pg = new ProgressaoGeometrica(valorInicial, razao);
         
