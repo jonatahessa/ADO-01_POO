@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.pi3.ADO;
+package Atividade01;
 
 /**
  *
  * @author jonata
  */
-public class Exercicio01 {
+public class Fatorial {
     
 }
